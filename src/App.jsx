@@ -6,6 +6,6 @@ const App = () => {
       <h3>Welcome to my new website</h3>
     </>
   );
-}
+};
 
 export default App;
