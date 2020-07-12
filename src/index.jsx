@@ -1,3 +1,6 @@
+import 'antd/dist/antd.css';
+import 'assets/scss/styles.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'App';
