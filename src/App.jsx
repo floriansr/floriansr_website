@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from 'components/Navbar';
 import Projects from 'pages/Projects';
+import Home from 'pages/Home';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route exact path="/about" />
             <Route exact path="/project/:projectId" />
             <Route exact path="/projects" component={Projects} />
+            <Home exact path="/" component={Home} />
             <Route path="*" status={404} />
           </Switch>
         </div>
