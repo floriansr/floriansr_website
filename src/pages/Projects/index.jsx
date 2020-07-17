@@ -9,26 +9,27 @@ import image5 from 'assets/images/liliana.jpg';
 import wave1 from 'assets/images/wave1.png';
 import wave2 from 'assets/images/wave2.png';
 import wave3 from 'assets/images/wave3.png';
-import dp from 'assets/images/data_processing.svg';
 
 const Projects = () => {
   return (
     <>
-      <section className="slice sct-color-1">
+      <section
+        className="slice sct-color-1"
+        style={{ backgroundColor: 'lightgrey' }}
+      >
         <div className="container">
           <div className="row cols-xs-space cols-sm-space">
             <div className="col-lg-6 ml-lg-auto order-lg-2 align-self-lg-center">
               <div className="col-wrapper--spaced-x">
-                <div className="row">
-                  <h3 className="heading heading-xl text-uppercase strong-600 ls-2 mt-4">
-                    Projects
-                  </h3>
-                  <img src={dp} alt="" width={120} />
-                </div>
+                <h3 className="heading heading-xl text-uppercase strong-600 ls-2 mt-4">
+                  Projects
+                </h3>
 
                 <p className="mt-4">
-                  There is only one way to learn. Everything you need to know
-                  you have learned through your journey.
+                  There is only one way to learn.
+                  <br />
+                  Everything you need to know about what I learned through my
+                  journey.
                 </p>
               </div>
             </div>
