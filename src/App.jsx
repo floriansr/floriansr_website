@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
 import Projects from 'pages/Projects';
 import Home from 'pages/Home';
 
@@ -20,6 +21,7 @@ const App = () => {
             <Home exact path="/" component={Home} />
             <Route path="*" status={404} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     </>
