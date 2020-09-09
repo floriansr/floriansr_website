@@ -6,9 +6,8 @@ import image2 from 'assets/images/img-5.jpg';
 import image3 from 'assets/images/img-42.jpg';
 import image4 from 'assets/images/img-12.jpg';
 import image5 from 'assets/images/liliana.jpg';
-import wave1 from 'assets/images/wave1.png';
-import wave2 from 'assets/images/wave2.png';
-import wave3 from 'assets/images/wave3.png';
+
+import ProgressiveBar from 'components/ProgressiveBar';
 
 const Projects = () => {
   return (
@@ -17,7 +16,7 @@ const Projects = () => {
         className="slice sct-color-1"
         style={{ backgroundColor: 'lightgrey' }}
       >
-        <div className="container">
+        <div className="container" style={{ paddingBottom: 'inherit' }}>
           <div className="row cols-xs-space cols-sm-space">
             <div className="col-lg-6 ml-lg-auto order-lg-2 align-self-lg-center">
               <div className="col-wrapper--spaced-x">
@@ -195,7 +194,7 @@ const Projects = () => {
 
             <div className="col-lg-6 order-lg-1 mt-150 animate-on-scroll fadeInUp">
               <div className="col-wrapper--spaced-x">
-                <div className="block block-image-holder">
+                <div className="block block-image-holder mb-5">
                   <div className="block-image">
                     <div className="view view-first">
                       <Link to="project/5">
@@ -232,24 +231,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="line line-1 mt-5">
-          <div
-            className="wave wave1"
-            style={{ backgroundImage: `url(${wave1})` }}
-          />
-        </div>
-        <div className="line line-2 mt-5">
-          <div
-            className="wave wave2"
-            style={{ backgroundImage: `url(${wave2})` }}
-          />
-        </div>
-        <div className="line line-3 mt-5">
-          <div
-            className="wave wave3"
-            style={{ backgroundImage: `url(${wave3})` }}
-          />
-        </div>
+        <ProgressiveBar />
       </section>
     </>
   );
