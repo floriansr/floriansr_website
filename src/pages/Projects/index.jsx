@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
 import { Link } from 'react-router-dom';
+import { Div, Col, Row, Image, Text, Container } from 'atomize';
+
 import image1 from 'assets/images/img-55.jpg';
 import image2 from 'assets/images/img-5.jpg';
 import image3 from 'assets/images/img-42.jpg';
@@ -16,221 +18,266 @@ const Projects = () => {
         className="slice sct-color-1"
         style={{ backgroundColor: 'lightgrey' }}
       >
-        <div className="container" style={{ paddingBottom: 'inherit' }}>
-          <div className="row cols-xs-space cols-sm-space">
-            <div className="col-lg-6 ml-lg-auto order-lg-2 align-self-lg-center">
-              <div className="col-wrapper--spaced-x">
-                <h3 className="heading heading-xl text-uppercase strong-600 ls-2 mt-4">
-                  Projects
-                </h3>
+        <Container p={{ b: 'inherit' }}>
+          <Div className="cols-xs-space cols-sm-space">
+            <Row>
+              <Div className="col-lg-6 ml-lg-auto order-lg-2 align-self-lg-center">
+                <Div className="col-wrapper--spaced-x">
+                  <Text
+                    m={{ t: '1.5rem' }}
+                    tag="h3"
+                    className="heading heading-xl text-uppercase strong-600 ls-2"
+                  >
+                    Projects
+                  </Text>
 
-                <p className="mt-4">
-                  There is only one way to learn.
-                  <br />
-                  Everything you need to know about what I learned through my
-                  journey.
-                </p>
-              </div>
-            </div>
+                  <Text m={{ t: '1.5rem' }}>
+                    There is only one way to learn.
+                    <br />
+                    Everything you need to know about what I learned through my
+                    journey.
+                  </Text>
+                </Div>
+              </Div>
 
-            <div className="col-lg-6 order-lg-1">
-              <div className="col-wrapper--spaced-x">
-                <div className="block block-image-holder">
-                  <div className="block-image">
-                    <div className="view view-first">
-                      <Link to="/project/1">
-                        <img
-                          src={image1}
-                          alt=""
-                          height={300}
-                          className="object-fit"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <div className="row align-items-center">
-                      <div className="col-8">
-                        <h3 className="heading heading-3 strong-600 text-normal mb-0">
-                          <span className="heading-count">01</span>
-                          MixUp
-                        </h3>
-                      </div>
-                      <div className="col-4 text-right">
-                        <Link
-                          to="/project/1"
-                          className="link link-xs link--line-after strong-600
+              <Div className="col-lg-6 order-lg-1">
+                <Div className="col-wrapper--spaced-x">
+                  <Div
+                    className="block block-image-holder"
+                    m={{ t: { xs: '3rem', md: '3rem', lg: '0' } }}
+                  >
+                    <Div className="block-image">
+                      <Div className="view view-first">
+                        <Link to="/project/1">
+                          <Image
+                            src={image1}
+                            alt=""
+                            height={300}
+                            className="object-fit"
+                          />
+                        </Link>
+                      </Div>
+                    </Div>
+                    <Div align="center" p={{ t: '1.5rem' }}>
+                      <Row>
+                        <Col size="8">
+                          <Text
+                            tag="h3"
+                            className="heading heading-3 strong-600 text-normal mb-0"
+                          >
+                            <span className="heading-count">01</span>
+                            MixUp
+                          </Text>
+                        </Col>
+                        <Col size="4" textAlign="right">
+                          <Link
+                            to="/project/1"
+                            className="link link-xs link--line-after strong-600
                           text-uppercase ls-2"
-                        >
-                          {' '}
-                          View case
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+                          >
+                            {' '}
+                            View case
+                          </Link>
+                        </Col>
+                      </Row>
+                    </Div>
+                  </Div>
+                </Div>
+              </Div>
+            </Row>
+          </Div>
           <span className="space-xs-only-3 space-sm-only-3" />
-
-          <div className="row cols-xs-space cols-sm-space">
-            <div className="col-lg-6 ml-lg-auto order-lg-2">
-              <div className="col-wrapper--spaced-x">
-                <div className="block block-image-holder">
-                  <div className="block-image">
-                    <div className="view view-first">
-                      <Link to="/project/2">
-                        <img
-                          src={image2}
-                          alt=""
-                          width={800}
-                          height={300}
-                          className="object-fit"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <div className="row align-items-center">
-                      <div className="col-8">
-                        <h3 className="heading heading-3 strong-600 text-normal mb-0">
-                          <span className="heading-count">02</span>
-                          FormYou
-                        </h3>
-                      </div>
-                      <div className="col-4 text-right">
-                        <Link
-                          to="/project/2"
-                          className="link link-xs link--line-after strong-600 text-uppercase ls-2"
-                        >
-                          View case
+          {/* 02/03 */}
+          <Div className="cols-xs-space cols-sm-space">
+            <Row>
+              {/* 2 */}
+              <Div className="col-lg-6 ml-lg-auto order-lg-2">
+                <Div className="col-wrapper--spaced-x">
+                  <Div
+                    className="block block-image-holder"
+                    m={{ t: { xs: '3rem', md: '3rem', lg: '0' } }}
+                  >
+                    <Div className="block-image">
+                      <Div className="view view-first">
+                        <Link to="/project/2">
+                          <Image
+                            src={image2}
+                            alt=""
+                            width={800}
+                            height={300}
+                            className="object-fit"
+                          />
                         </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      </Div>
+                    </Div>
+                    <Div align="center" p={{ t: '1.5rem' }}>
+                      <Row>
+                        <Col size="8">
+                          <Text
+                            tag="h3"
+                            className="heading heading-3 strong-600 text-normal mb-0"
+                          >
+                            <span className="heading-count">02</span>
+                            FormYou
+                          </Text>
+                        </Col>
+                        <Col textAlign="right" size="4">
+                          <Link
+                            to="/project/2"
+                            className="link link-xs link--line-after strong-600 text-uppercase ls-2"
+                          >
+                            View case
+                          </Link>
+                        </Col>
+                      </Row>
+                    </Div>
+                  </Div>
+                </Div>
+              </Div>
 
-            <div className="col-lg-6 order-lg-1 mt-150 animate-on-scroll fadeInUp">
-              <div className="col-wrapper--spaced-x">
-                <div className="block block-image-holder">
-                  <div className="block-image">
-                    <div className="view view-first">
-                      <Link to="/project/3">
-                        <img
-                          src={image3}
-                          alt=""
-                          height={300}
-                          className="object-fit"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <div className="row align-items-center">
-                      <div className="col-8">
-                        <h3 className="heading heading-3 strong-600 text-normal mb-0">
-                          <span className="heading-count">03</span>
-                          Simili-Eventbrite
-                        </h3>
-                      </div>
-                      <div className="col-4 text-right">
-                        <Link
-                          to="/project/3"
-                          className="link link-xs link--line-after strong-600 text-uppercase ls-2"
-                        >
-                          View case
+              <Div
+                className="col-lg-6 order-lg-1 animate-on-scroll fadeInUp"
+                m={{ t: { xs: '0', md: '0', lg: '8rem' } }}
+              >
+                <Div className="col-wrapper--spaced-x">
+                  <Div
+                    className="block block-image-holder"
+                    m={{ t: { xs: '3rem', md: '3rem', lg: '0' } }}
+                  >
+                    <Div className="block-image">
+                      <Div className="view view-first">
+                        <Link to="/project/3">
+                          <Image
+                            src={image3}
+                            alt=""
+                            height={300}
+                            className="object-fit"
+                          />
                         </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+                      </Div>
+                    </Div>
+                    <Div align="center" p={{ t: '1.5rem' }}>
+                      <Row>
+                        <Col size="8">
+                          <Text
+                            tag="h3"
+                            className="heading heading-3 strong-600 text-normal mb-0"
+                          >
+                            <span className="heading-count">03</span>
+                            Simili-Eventbrite
+                          </Text>
+                        </Col>
+                        <Col textAlign="right" size="4">
+                          <Link
+                            to="/project/3"
+                            className="link link-xs link--line-after strong-600 text-uppercase ls-2"
+                          >
+                            View case
+                          </Link>
+                        </Col>
+                      </Row>
+                    </Div>
+                  </Div>
+                </Div>
+              </Div>
+            </Row>
+          </Div>
           <span className="space-xs-only-3 space-sm-only-3" />
-
-          <div className="row cols-xs-space cols-sm-space">
-            <div className="col-lg-6 ml-lg-auto order-lg-2 animate-on-scroll fadeInUp">
-              <div className="col-wrapper--spaced-x">
-                <div className="block block-image-holder">
-                  <div className="block-image">
-                    <div className="view view-first">
-                      <Link to="/project/4">
-                        <img
-                          src={image4}
-                          alt=""
-                          height={300}
-                          className="object-fit"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <div className="row align-items-center">
-                      <div className="col-8">
-                        <h3 className="heading heading-3 strong-600 text-normal mb-0">
-                          <span className="heading-count">04</span>
-                          Ti Sorbet
-                        </h3>
-                      </div>
-                      <div className="col-4 text-right">
-                        <Link
-                          to="/project/4"
-                          className="link link-xs link--line-after strong-600 text-uppercase ls-2"
-                        >
-                          View case
+          {/* 04/05 */}
+          <Div className="cols-xs-space cols-sm-space">
+            <Row>
+              <Div className="col-lg-6 ml-lg-auto order-lg-2 animate-on-scroll fadeInUp">
+                <Div className="col-wrapper--spaced-x">
+                  <Div
+                    className="block block-image-holder"
+                    m={{ t: { xs: '3rem', md: '3rem', lg: '0' } }}
+                  >
+                    <Div className="block-image">
+                      <Div className="view view-first">
+                        <Link to="/project/4">
+                          <Image
+                            src={image4}
+                            alt=""
+                            height={300}
+                            className="object-fit object-fit-top"
+                          />
                         </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      </Div>
+                    </Div>
+                    <Div align="center" p={{ t: '1.5rem' }}>
+                      <Row>
+                        <Col size="8">
+                          <Text
+                            tag="h3"
+                            className="heading heading-3 strong-600 text-normal mb-0"
+                          >
+                            <span className="heading-count">04</span>
+                            Ti Sorbet
+                          </Text>
+                        </Col>
+                        <Col size="4" textAlign="right">
+                          <Link
+                            to="/project/4"
+                            className="link link-xs link--line-after strong-600 text-uppercase ls-2"
+                          >
+                            View case
+                          </Link>
+                        </Col>
+                      </Row>
+                    </Div>
+                  </Div>
+                </Div>
+              </Div>
 
-            <div className="col-lg-6 order-lg-1 mt-150 animate-on-scroll fadeInUp">
-              <div className="col-wrapper--spaced-x">
-                <div className="block block-image-holder mb-5">
-                  <div className="block-image">
-                    <div className="view view-first">
-                      <Link to="project/5">
-                        <img
-                          src={image5}
-                          alt=""
-                          width={800}
-                          height={300}
-                          className="object-fit object-fit-top"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <div className="row align-items-center">
-                      <div className="col-8">
-                        <h3 className="heading heading-3 strong-600 text-normal mb-0">
-                          <span className="heading-count">05</span>
-                          WARZ
-                        </h3>
-                      </div>
-                      <div className="col-4 text-right">
-                        <Link
-                          to="/project/5"
-                          className="link link-xs link--line-after strong-600 text-uppercase ls-2"
-                        >
-                          View case
+              <Div
+                className="col-lg-6 order-lg-1 animate-on-scroll fadeInUp"
+                m={{ t: { xs: '0', md: '0', lg: '8rem' } }}
+                p={{ b: { xs: '5rem', md: '4.5rem', lg: '0' } }}
+              >
+                <Div className="col-wrapper--spaced-x">
+                  <Div
+                    className="block block-image-holder mb-5"
+                    m={{ t: { xs: '3rem', md: '3rem', lg: '0' } }}
+                  >
+                    <Div className="block-image">
+                      <Div className="view view-first">
+                        <Link to="project/5">
+                          <Image
+                            src={image5}
+                            alt=""
+                            height={300}
+                            className="object-fit object-fit-top"
+                          />
                         </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                      </Div>
+                    </Div>
+                    <Div align="center" p={{ t: '1.5rem' }}>
+                      <Row>
+                        <Col size="8">
+                          <Text
+                            tag="h3"
+                            className="heading heading-3 strong-600 text-normal mb-0"
+                          >
+                            <span className="heading-count">05</span>
+                            WARZ
+                          </Text>
+                        </Col>
+                        <Col size="4" textAlign="right">
+                          <Link
+                            to="/project/5"
+                            className="link link-xs link--line-after strong-600 text-uppercase ls-2"
+                          >
+                            View case
+                          </Link>
+                        </Col>
+                      </Row>
+                    </Div>
+                  </Div>
+                </Div>
+              </Div>
+            </Row>
+          </Div>
+        </Container>
         <ProgressiveBar />
       </section>
     </>
