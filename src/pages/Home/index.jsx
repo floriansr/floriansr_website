@@ -1,12 +1,14 @@
 import React from 'react';
 import './styles.scss';
+import { Div, Text } from 'atomize';
+
 import bgVideo from 'assets/videos/keyboard.mp4';
 import NewPlaylistButton from 'components/ProjectsButton';
 
 const Home = () => {
   return (
     <>
-      <div className="page home">
+      <Div className="page home">
         <video
           playsInline="playsinline"
           autoPlay="autoplay"
@@ -17,18 +19,18 @@ const Home = () => {
           <source src={bgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="homePageContent">
-          <div className="overFlowText">
-            <p className="slogan">Welcome visitor !</p>
-            <p className="productPresentation">
+        <Div className="homePageContent">
+          <Div className="overFlowText">
+            <Text className="slogan">Welcome visitor !</Text>
+            <Text className="productPresentation">
               Feel free to browse my portfolio and let yourself be guided by my
               different projects!
               <br /> You'll find links, images and access to the GitHub repos
-            </p>
+            </Text>
             <NewPlaylistButton />
-          </div>
-        </div>
-      </div>
+          </Div>
+        </Div>
+      </Div>
     </>
   );
 };
