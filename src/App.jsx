@@ -6,10 +6,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
 import Projects from 'pages/Projects';
+import Project from 'pages/Project';
 import Home from 'pages/Home';
 
 const debug =
-  process.env.NODE_ENV === 'production' ? void 0 : new DebugEngine();
+  process.env.NODE_ENV === 'production' ? undefined : new DebugEngine();
 
 const engine = new Styletron();
 
@@ -22,7 +23,7 @@ const App = () => {
           <Switch>
             <Route exact path="/new-playlist" />
             <Route exact path="/about" />
-            <Route exact path="/project/:projectId" />
+            <Route exact path="/project/:projectId" component={Project} />
             <Route exact path="/projects" component={Projects} />
             <Home exact path="/" component={Home} />
             <Route path="*" status={404} />
