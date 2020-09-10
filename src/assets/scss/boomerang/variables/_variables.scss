@@ -6,6 +6,10 @@ $section-color-2: #fcfcfc;
 $border-radius: 0.25rem;
 $card-border-radius:       $border-radius;
 
+.sct-color-2{background-color: lightgrey}
+$border-radius: 0.25rem;
+$card-border-radius:       $border-radius;
+
 .slice{padding-top:4rem;padding-bottom:4rem;position:relative}
 
 .container {
@@ -33,15 +37,35 @@ $card-border-radius:       $border-radius;
 .col-wrapper--spaced-x{padding-left:3rem;padding-right:3rem}
 .heading{margin:0 0 6px;padding:0;text-transform:none;font-family:"Nunito",sans-serif;font-weight:600;color:#111;line-height:1.46}
 .heading-xl{font-size:3.75rem !important}
+.heading-1 {
+  font-size: 2.5rem !important;
+  line-height: 1.3;
+}
 .heading-3 {
   font-size: 1.5rem !important;
   line-height: 1.3;
 }
 .text-uppercase{text-transform:uppercase !important}
+.text-capitalize{text-transform:capitalize !important}
+
 .text-normal {
   text-transform: none !important;
 }
+.c-gray-light {
+    color: #818a91 !important;
+}
+.font-custom-4 {
+    font-family: "Slabo 27px",sans-serif !important;
+}
+.strong-400 {
+    font-weight: 400 !important;
+}
+.strong-500 {
+    font-weight: 500 !important;
+}
 .strong-600{font-weight:600 !important}
+.strong-700{font-weight:700 !important}
+
 .ls-2{letter-spacing:2px !important}
 .block {
     margin: 0;
@@ -181,4 +205,41 @@ $card-border-radius:       $border-radius;
 
 .object-fit-top{
   object-position: 80% 20%;
+}
+
+.vertical-info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.vertical-info>li {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.vertical-info>li>p {
+    display: inline-block;
+    font-size: .875rem;
+}
+
+.vertical-info>li {
+    color: #2b2b2c;
+}
+
+.line-height-1_8 {
+    line-height: 1.8 !important;
+}
+
+.line-height-3.5 {
+    line-height: 3.5 !important;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.heading-sm {
+    font-size: .875rem !important;
 }
