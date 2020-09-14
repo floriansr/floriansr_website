@@ -1,1 +1,2 @@
-// export { setChoice, removeChoice } from "redux/choice/choiceAction";
+export { setProjects } from 'redux/projects/projectsActions';
+export { setProject } from 'redux/project/projectActions';
