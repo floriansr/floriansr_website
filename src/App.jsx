@@ -23,7 +23,7 @@ const App = () => {
           <Switch>
             <Route exact path="/new-playlist" />
             <Route exact path="/about" />
-            <Route exact path="/project/:projectId" component={Project} />
+            <Route exact path="/project/:projectSlug" component={Project} />
             <Route exact path="/projects" component={Projects} />
             <Home exact path="/" component={Home} />
             <Route path="*" status={404} />
