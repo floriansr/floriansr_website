@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import Cookies from 'js-cookie';
+
+import APIManager from 'services/APIManager';
 import { Div, Col, Row, Image, Text, Container } from 'atomize';
 
 import image1 from 'assets/images/img-55.jpg';
@@ -10,8 +14,32 @@ import image4 from 'assets/images/img-12.jpg';
 import image5 from 'assets/images/liliana.jpg';
 
 import ProgressiveBar from 'components/ProgressiveBar';
+import { cookieName } from '../../constants';
+import { setProjects } from '../../redux';
 
 const Projects = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const res = await APIManager.showProjects();
+        Cookies.set(
+          cookieName,
+          {
+            projectsInfo: res,
+          },
+          { expires: 6 }
+        );
+        dispatch(setProjects(res));
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProjects();
+  }, [dispatch]);
+
   return (
     <>
       <section
@@ -48,7 +76,7 @@ const Projects = () => {
                   >
                     <Div className="block-image">
                       <Div className="view view-first">
-                        <Link to="/project/1">
+                        <Link to="/project/5f5f74374923c300174757ce">
                           <Image
                             src={image1}
                             alt=""
