@@ -19,8 +19,8 @@ export default class APIManager {
     return res.data;
   }
 
-  static async showProject(projectId) {
-    const res = await API.get(`api/projects/${projectId}`);
+  static async showProject(projectSlug) {
+    const res = await API.get(`api/projects/${projectSlug}`);
     return res.data;
   }
 }
