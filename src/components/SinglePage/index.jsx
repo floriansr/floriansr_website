@@ -132,7 +132,7 @@ const SinglePage = () => {
                   <br />
 
                   <Text className="lead line-height-1_8" textAlign="justify">
-                    {project.details}
+                    {project.description2}
                   </Text>
                 </Container>
               </Col>
@@ -155,16 +155,17 @@ const SinglePage = () => {
                       GitHub repositories
                     </Anchor>
                   </li>
-
-                  <li>
-                    <Anchor
-                      href={project.discovery_links}
-                      className="link"
-                      target="_blank"
-                    >
-                      Discovery &amp; Inspirations
-                    </Anchor>
-                  </li>
+                  {project.discovery_links !== 'null' ? (
+                    <li>
+                      <Anchor
+                        href={project.discovery_links}
+                        className="link"
+                        target="_blank"
+                      >
+                        Discovery &amp; Inspirations
+                      </Anchor>
+                    </li>
+                  ) : null}
                 </ul>
               </Col>
             </Row>
@@ -182,14 +183,14 @@ const SinglePage = () => {
                 tag="h2"
                 className="heading heading-1 strong-400 font-custom-4"
               >
-                An excellent choice
+                Workflow
               </Text>
               <Text
                 tag="h3"
                 m={{ t: '1.5rem' }}
-                className="heading heading-3 strong-400 c-gray-light font-custom-4 "
+                className="heading heading-3 strong-400 font-custom-4 "
               >
-                We build it. You rock it!
+                We build it.
               </Text>
 
               <Text
@@ -197,11 +198,7 @@ const SinglePage = () => {
                 m={{ b: '1.5rem' }}
                 style={{ textAlign: 'justify' }}
               >
-                The past and the future become unimportant. There is only that
-                moment, and the incredible certainty that everything under the
-                sun has been written by one hand only. It is the hand that
-                evokes love, and creates a twin soul for every person in the
-                world. Without such love, one’s dreams would have no meaning.
+                {project.description3}
               </Text>
             </Div>
           </Row>
