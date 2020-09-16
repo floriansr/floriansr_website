@@ -222,21 +222,6 @@ const SinglePage = () => {
               </Div>
             </Row>
           </Div>
-
-          <Div
-            m={{ t: '-4rem' }}
-            className="justify-content-center animate-on-scroll fadeInUp"
-          >
-            <Row>
-              <Div className="col-lg-10 ml-lg-auto view view-first">
-                <Image
-                  src={project.imageUrl3}
-                  className="object-fit"
-                  style={{ borderRadius: '0.25rem', height: '25vh' }}
-                />
-              </Div>
-            </Row>
-          </Div>
         </Container>
 
         <ProgressiveBar />
