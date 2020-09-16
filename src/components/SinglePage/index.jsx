@@ -109,7 +109,12 @@ const SinglePage = () => {
                   left="55%"
                   top="10%"
                 >
-                  <Anchor href={project.link} textColor="white" target="_blank">
+                  <Anchor
+                    href={project.link}
+                    textColor="white"
+                    hoverTextColor="white"
+                    target="_blank"
+                  >
                     Preview
                   </Anchor>
                 </Button>
