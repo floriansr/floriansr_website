@@ -21,17 +21,17 @@ const SinglePage = () => {
     <>
       <section
         style={{
-          paddingTop: '2rem',
           paddingBottom: '2rem',
           backgroundColor: 'lightgrey',
         }}
       >
-        <Container p={{ b: 'inherit' }}>
+        <Container p={{ b: 'inherit' }} m="0">
           <Row>
             <Div size="12">
               <Image
                 src={project.imageUrl}
                 h="50vh"
+                w="100vw"
                 className="object-fit"
                 style={{
                   borderRadius: '0.25rem',
@@ -68,25 +68,21 @@ const SinglePage = () => {
                 <ul className="vertical-info mt-4 mr-2">
                   <li>
                     <Row justify={{ xs: 'space-around', lg: 'space-between' }}>
-                      <Icon
-                        name="FolderSolid"
-                        size="18px"
-                        className="vi-title"
-                      />
-                      <p className="vi-content">{project.themes}</p>
+                      <Icon name="FolderSolid" size="18px" />
+                      <p>{project.themes}</p>
                     </Row>
                   </li>
 
                   <li>
                     <Row justify={{ xs: 'space-around', lg: 'space-between' }}>
-                      <Icon name="UserSolid" size="18px" className="vi-title" />
-                      <p className="vi-content">{project.team}</p>
+                      <Icon name="UserSolid" size="18px" />
+                      <p>{project.team}</p>
                     </Row>
                   </li>
                   <li>
                     <Row justify={{ xs: 'space-around', lg: 'space-between' }}>
-                      <Icon name="Settings" size="18px" className="vi-title" />
-                      <p className="vi-content">{project.tools}</p>
+                      <Icon name="Settings" size="18px" />
+                      <p>{project.tools}</p>
                     </Row>
                   </li>
                 </ul>
@@ -194,7 +190,7 @@ const SinglePage = () => {
               </Text>
 
               <Text
-                className="c-gray-light mt-4"
+                className="mt-4"
                 m={{ b: '1.5rem' }}
                 style={{ textAlign: 'justify' }}
               >
@@ -209,7 +205,7 @@ const SinglePage = () => {
                 <Image
                   src={project.imageUrl1}
                   className="object-fit"
-                  style={{ borderRadius: '0.25rem', height: '300px' }}
+                  style={{ borderRadius: '0.25rem', height: '25vh' }}
                 />
               </Div>
             </Row>
@@ -221,7 +217,7 @@ const SinglePage = () => {
                 <Image
                   src={project.imageUrl2}
                   className="object-fit"
-                  style={{ borderRadius: '0.25rem', height: '300px' }}
+                  style={{ borderRadius: '0.25rem', height: '25vh' }}
                 />
               </Div>
             </Row>
@@ -232,13 +228,13 @@ const SinglePage = () => {
             className="justify-content-center animate-on-scroll fadeInUp"
           >
             <Row>
-              <Col size={{ lg: '10' }} className="ml-lg-auto view view-first">
+              <Div className="col-lg-10 ml-lg-auto view view-first">
                 <Image
                   src={project.imageUrl3}
                   className="object-fit"
-                  style={{ borderRadius: '0.25rem', height: '300px' }}
+                  style={{ borderRadius: '0.25rem', height: '25vh' }}
                 />
-              </Col>
+              </Div>
             </Row>
           </Div>
         </Container>
