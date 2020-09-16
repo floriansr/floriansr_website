@@ -76,7 +76,7 @@ const Projects = () => {
                   >
                     <Div className="block-image">
                       <Div className="view view-first">
-                        <Link to="/project/5f5f74374923c300174757ce">
+                        <Link to="/project/mixup">
                           <Image
                             src={image1}
                             alt=""
@@ -99,7 +99,7 @@ const Projects = () => {
                         </Col>
                         <Col size="4" textAlign="right">
                           <Link
-                            to="/project/1"
+                            to="/project/mixup"
                             className="link link-xs link--line-after strong-600
                           text-uppercase ls-2"
                           >
@@ -127,7 +127,7 @@ const Projects = () => {
                   >
                     <Div className="block-image">
                       <Div className="view view-first">
-                        <Link to="/project/2">
+                        <Link to="/project/formyou">
                           <Image
                             src={image2}
                             alt=""
@@ -151,7 +151,7 @@ const Projects = () => {
                         </Col>
                         <Col textAlign="right" size="4">
                           <Link
-                            to="/project/2"
+                            to="/project/formyou"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
                             View case
@@ -174,7 +174,7 @@ const Projects = () => {
                   >
                     <Div className="block-image">
                       <Div className="view view-first">
-                        <Link to="/project/3">
+                        <Link to="/project/simili-eventbrite">
                           <Image
                             src={image3}
                             alt=""
@@ -197,7 +197,7 @@ const Projects = () => {
                         </Col>
                         <Col textAlign="right" size="4">
                           <Link
-                            to="/project/3"
+                            to="/project/simili-eventbrite"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
                             View case
@@ -222,7 +222,7 @@ const Projects = () => {
                   >
                     <Div className="block-image">
                       <Div className="view view-first">
-                        <Link to="/project/4">
+                        <Link to="/project/tisorbet">
                           <Image
                             src={image4}
                             alt=""
@@ -245,7 +245,7 @@ const Projects = () => {
                         </Col>
                         <Col size="4" textAlign="right">
                           <Link
-                            to="/project/4"
+                            to="/project/tisorbet"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
                             View case
@@ -269,7 +269,7 @@ const Projects = () => {
                   >
                     <Div className="block-image">
                       <Div className="view view-first">
-                        <Link to="project/5">
+                        <Link to="project/warz">
                           <Image
                             src={image5}
                             alt=""
@@ -292,7 +292,7 @@ const Projects = () => {
                         </Col>
                         <Col size="4" textAlign="right">
                           <Link
-                            to="/project/5"
+                            to="/project/warz"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
                             View case

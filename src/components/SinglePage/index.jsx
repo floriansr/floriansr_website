@@ -109,7 +109,7 @@ const SinglePage = () => {
                   left="55%"
                   top="10%"
                 >
-                  <Anchor href="#" textColor="white">
+                  <Anchor href={project.link} textColor="white" target="_blank">
                     Preview
                   </Anchor>
                 </Button>
@@ -142,13 +142,21 @@ const SinglePage = () => {
 
                 <ul className="vertical-info mt-4">
                   <li>
-                    <Anchor href={project.github_link} className="link">
+                    <Anchor
+                      href={project.github_link}
+                      className="link"
+                      target="_blank"
+                    >
                       GitHub repositories
                     </Anchor>
                   </li>
 
                   <li>
-                    <Anchor href={project.discovery_links} className="link">
+                    <Anchor
+                      href={project.discovery_links}
+                      className="link"
+                      target="_blank"
+                    >
                       Discovery &amp; Inspirations
                     </Anchor>
                   </li>
