@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Provider as StyletronProvider, DebugEngine } from 'styletron-react';
 import { Client as Styletron } from 'styletron-engine-atomic';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -15,22 +15,36 @@ const debug =
 const engine = new Styletron();
 
 const App = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 750);
+  }, []);
+
   return (
     <>
-      <StyletronProvider value={engine} debug={debug} debugAfterHydration>
-        <Router>
-          <Navbar />
-          <Switch>
-            <Route exact path="/new-playlist" />
-            <Route exact path="/about" />
-            <Route exact path="/project/:projectSlug" component={Project} />
-            <Route exact path="/projects" component={Projects} />
-            <Home exact path="/" component={Home} />
-            <Route path="*" status={404} />
-          </Switch>
-          <Footer />
-        </Router>
-      </StyletronProvider>
+      {isLoaded ? (
+        <StyletronProvider value={engine} debug={debug} debugAfterHydration>
+          <Router>
+            <Navbar />
+            <Switch>
+              <Route exact path="/new-playlist" />
+              <Route exact path="/about" />
+              <Route exact path="/project/:projectSlug" component={Project} />
+              <Route exact path="/projects" component={Projects} />
+              <Home exact path="/" component={Home} />
+              <Route path="*" status={404} />
+            </Switch>
+            <Footer />
+          </Router>
+        </StyletronProvider>
+      ) : (
+        <div className="loader">
+          <div className="spinner" />
+        </div>
+      )}
     </>
   );
 };
