@@ -1,2 +1,2 @@
-export { setProjects } from 'redux/projects/projectsActions';
-export { setProject } from 'redux/project/projectActions';
+export { setProjects } from 'reduxFolder/projects/projectsActions';
+export { setProject } from 'reduxFolder/project/projectActions';

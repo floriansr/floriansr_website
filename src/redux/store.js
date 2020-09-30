@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 
-import projectsReducer from 'redux/projects/projectsReducer';
-import projectReducer from 'redux/project/projectReducer';
+import projectsReducer from 'reduxFolder/projects/projectsReducer';
+import projectReducer from 'reduxFolder/project/projectReducer';
 
 const rootReducer = combineReducers({
   allProjects: projectsReducer,

@@ -10,7 +10,7 @@ import { Div, Col, Row, Image, Text, Container } from 'atomize';
 import image1 from 'assets/images/img-55.jpg';
 import image2 from 'assets/images/img-5.jpg';
 import image3 from 'assets/images/img-42.jpg';
-import image4 from 'assets/images/img-12.jpg';
+import image4 from 'src/assets/images/img-12.jpg';
 import image5 from 'assets/images/liliana.jpg';
 
 import ProgressiveBar from 'components/ProgressiveBar';

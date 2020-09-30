@@ -11,6 +11,9 @@
     "antd": "^4.4.2",
     "atomize": "^1.0.26",
     "axios": "^0.20.0",
+    "gatsby": "^2.24.66",
+    "gatsby-plugin-sass": "^2.3.14",
+    "gatsby-source-filesystem": "^2.3.31",
     "js-cookie": "^2.2.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -25,10 +28,8 @@
     "styletron-react": "^5.2.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "gatsby develop -p 3333 -o",
+    "build": "gatsby build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +55,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.7",
+    "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^2.0.5"
   }
 }
