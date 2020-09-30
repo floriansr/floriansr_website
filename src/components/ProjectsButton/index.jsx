@@ -10,7 +10,7 @@ const NewPlaylistButton = () => {
     <>
       <Link to="/projects">
         <Button variant="contained" color="secondary" id="projects-button">
-          Start to look ?
+          Commencer à regarder ?
         </Button>
       </Link>
     </>

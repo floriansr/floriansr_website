@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <Menu.Item icon={<HomeOutlined />}>
             <NavLink exact to="/" activeClassName="active">
-              Home
+              Accueil
             </NavLink>
           </Menu.Item>
 
@@ -34,11 +34,11 @@ const Navbar = () => {
               to="/projects"
               activeClassName="active"
             >
-              Projects
+              Projets
             </NavLink>
           </Menu.Item>
           <Menu.Item disabled icon={<AppstoreOutlined />}>
-            About
+            Parcours
           </Menu.Item>
           <Menu.Item disabled icon={<MailOutlined />}>
             Contact

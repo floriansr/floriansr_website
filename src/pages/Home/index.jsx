@@ -21,11 +21,11 @@ const Home = () => {
         </video>
         <Div className="homePageContent">
           <Div className="overFlowText">
-            <Text className="slogan">Welcome visitor !</Text>
+            <Text className="slogan">Bienvenue !</Text>
             <Text className="productPresentation">
-              Feel free to browse my portfolio and let yourself be guided by my
-              different projects!
-              <br /> You'll find links, images and access to the GitHub repos
+              N'hésitez pas à parcourir mon portfolio et à vous laisser guider par mon
+              différents projets !
+              <br /> Vous y trouverez des liens, des images et l'accès aux repos GitHub
             </Text>
             <NewPlaylistButton />
           </Div>

@@ -56,14 +56,13 @@ const Projects = () => {
                     tag="h3"
                     className="heading heading-xl text-uppercase strong-600 ls-2"
                   >
-                    Projects
+                    Projets
                   </Text>
 
                   <Text m={{ t: '1.5rem' }}>
-                    There is only one way to learn.
+                    Il n'y a qu'une seule façon d'apprendre.
                     <br />
-                    Everything you need to know about what I learned through my
-                    journey.
+                    Tout ce que vous devez savoir sur ce que j'ai appris au cours de ma carrière.
                   </Text>
                 </Div>
               </Div>
@@ -104,7 +103,7 @@ const Projects = () => {
                           text-uppercase ls-2"
                           >
                             {' '}
-                            View case
+                            Voir cas
                           </Link>
                         </Col>
                       </Row>
@@ -154,7 +153,7 @@ const Projects = () => {
                             to="/project/formyou"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
-                            View case
+                            Voir cas
                           </Link>
                         </Col>
                       </Row>
@@ -200,7 +199,7 @@ const Projects = () => {
                             to="/project/simili-eventbrite"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
-                            View case
+                            Voir cas
                           </Link>
                         </Col>
                       </Row>
@@ -248,7 +247,7 @@ const Projects = () => {
                             to="/project/tisorbet"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
-                            View case
+                            Voir cas
                           </Link>
                         </Col>
                       </Row>
@@ -295,7 +294,7 @@ const Projects = () => {
                             to="/project/warz"
                             className="link link-xs link--line-after strong-600 text-uppercase ls-2"
                           >
-                            View case
+                            Voir cas
                           </Link>
                         </Col>
                       </Row>

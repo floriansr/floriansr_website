@@ -119,7 +119,7 @@ const SinglePage = () => {
               <Col size="6">
                 <Container p={{ l: '3rem', r: '3rem' }}>
                   <Text tag="h3" className="heading heading-3 mb-4">
-                    The challenge
+                    Le challenge
                   </Text>
 
                   <Text className="lead line-height-1_8" textAlign="justify">
@@ -199,29 +199,36 @@ const SinglePage = () => {
             </Div>
           </Row>
 
-          <Div className="animate-on-scroll fadeInUp">
-            <Row>
-              <Div className="col-lg-10 ml-lg-auto view view-first">
-                <Image
-                  src={project.imageUrl1}
-                  className="object-fit"
-                  style={{ borderRadius: '0.25rem', height: '25vh' }}
-                />
+          {project.imageUrl1 !== undefined ? (
+            <>
+              <Div className="animate-on-scroll fadeInUp">
+                <Row>
+                  <Div className="col-lg-10 ml-lg-auto view view-first">
+                    <Image
+                      src={project.imageUrl1}
+                      className="object-fit"
+                      style={{ borderRadius: '0.25rem', height: '25vh' }}
+                    />
+                  </Div>
+                </Row>
               </Div>
-            </Row>
-          </Div>
 
-          <Div m={{ t: '-4rem' }} className="row animate-on-scroll fadeInUp">
-            <Row>
-              <Div className="col-lg-10 view view-first">
-                <Image
-                  src={project.imageUrl2}
-                  className="object-fit"
-                  style={{ borderRadius: '0.25rem', height: '25vh' }}
-                />
+              <Div
+                m={{ t: '-4rem' }}
+                className="row animate-on-scroll fadeInUp"
+              >
+                <Row>
+                  <Div className="col-lg-10 view view-first">
+                    <Image
+                      src={project.imageUrl2}
+                      className="object-fit"
+                      style={{ borderRadius: '0.25rem', height: '25vh' }}
+                    />
+                  </Div>
+                </Row>
               </Div>
-            </Row>
-          </Div>
+            </>
+          ) : null}
         </Container>
 
         <ProgressiveBar />

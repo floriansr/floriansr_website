@@ -32,7 +32,7 @@ const Footer = () => {
                       >
                         <strong>Florian Sueur </strong>
                       </Anchor>
-                      - All rights reserved
+                      - Tous droits réservés
                     </Text>
                   </Col>
                   <Col size="4" textAlign="right">
