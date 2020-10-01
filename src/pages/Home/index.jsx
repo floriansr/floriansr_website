@@ -23,9 +23,10 @@ const Home = () => {
           <Div className="overFlowText">
             <Text className="slogan">Bienvenue !</Text>
             <Text className="productPresentation">
-              N'hésitez pas à parcourir mon portfolio et à vous laisser guider par mon
-              différents projets !
-              <br /> Vous y trouverez des liens, des images et l'accès aux repos GitHub
+              N'hésitez pas à parcourir mon portfolio et à vous laisser guider
+              par mon différents projets !
+              <br /> Vous y trouverez des liens, des images et l'accès aux repos
+              GitHub
             </Text>
             <NewPlaylistButton />
           </Div>
